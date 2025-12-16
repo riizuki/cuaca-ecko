@@ -37,3 +37,8 @@ if ($weatherData) {
     require dirname(__DIR__) . '/views/weather_card.php';
     require dirname(__DIR__) . '/views/forecast_display.php';
 }
+
+if (empty(API_KEY) || strlen(API_KEY) < 10) { 
+    // Jika API Key kosong atau terlalu pendek (artinya gagal dimuat)
+    die('ERROR KRITIS: API Key gagal dimuat dari lingkungan Vercel. Pastikan telah disetel.');
+}
