@@ -9,7 +9,7 @@
     <meta name="keywords" content="cuaca hari ini, ramalan cuaca, prakiraan cuaca, cuaca Bandung, cuaca 7 hari, cek cuaca, informasi cuaca">
     <link rel="canonical" href="https://cuaca-gacor.vercel.app/">  
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Aplikasi Cuaca Terbaik Di Dunia">  
+    <meta property="og:title" content="Aplikasi Cuaca Terbaik IF-1">  
 
     <meta property="og:description" content="Daripada ramalan zodiak, mending ramalan cuaca 7 hari dari kita! Dijamin lebih akurat (dan lebih penting buat jemuran). Cek sekarang, sebelum kehujanan tiba-tiba!">
     
