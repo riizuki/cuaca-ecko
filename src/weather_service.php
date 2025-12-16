@@ -1,14 +1,6 @@
 <?php
 // src/weather_service.php
 
-/**
- * Mengambil data cuaca saat ini dan prakiraan dari WeatherAPI.
- *
- * @param string $city Nama kota yang akan dicari.
- * @param string $apiKey Kunci API untuk WeatherAPI.
- * @param int $days Jumlah hari prakiraan yang diminta.
- * @return array Berisi ['data' => object] jika berhasil, atau ['error' => string] jika gagal.
- */
 function getWeatherData(string $city, string $apiKey, int $days): array
 {
     // URL diubah ke forecast.json dan ditambahkan parameter &days
