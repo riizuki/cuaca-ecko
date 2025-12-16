@@ -1,14 +1,14 @@
 <?php
 // Load Composer's autoloader
-require_once __DIR__ . '/vendor/autoload.php';
+require_once dirname(__DIR__) . '/vendor/autoload.php';
 
 // Load environment variables from .env file
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
 $dotenv->load();
 
-require_once __DIR__ . '/src/config.php';
-require_once __DIR__ . '/src/weather_service.php';
-require_once __DIR__ . '/src/translation_helper.php';
+require_once dirname(__DIR__) . '/src/config.php';
+require_once dirname(__DIR__) . '/src/weather_service.php';
+require_once dirname(__DIR__) . '/src/translation_helper.php';
 
 $city = isset($_GET['city']) && !empty(trim($_GET['city'])) ? trim($_GET['city']) : 'Bandung';
 $days = isset($_GET['days']) ? (int)$_GET['days'] : 3; 
@@ -26,16 +26,14 @@ if ($weatherData) {
     }
 }
 
-require __DIR__ . '/views/header.php';
-require __DIR__ . '/views/search_form.php';
+require dirname(__DIR__) . '/views/header.php';
+require dirname(__DIR__) . '/views/search_form.php';
 
 if ($error) {
-    require __DIR__ . '/views/error_alert.php';
+    require dirname(__DIR__) . '/views/error_alert.php';
 }
 
 if ($weatherData) {
-    require __DIR__ . '/views/weather_card.php';
-    require __DIR__ . '/views/forecast_display.php';
+    require dirname(__DIR__) . '/views/weather_card.php';
+    require dirname(__DIR__) . '/views/forecast_display.php';
 }
-
-require __DIR__ . '/views/footer.php';
